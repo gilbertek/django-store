@@ -6,6 +6,11 @@ from django.conf.urls.static import static
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'profiles.views.home', name='home'),
+    url(r'^about/$', 'profiles.views.about', name='about'),
+    url(r'^contact/$', 'contact.views.contact', name='contact'),
+    url(r'^thanks/$', 'contact.views.thanks', name='thanks'),
+    (r'^accounts/', include('allauth.urls')),
+
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),

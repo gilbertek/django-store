@@ -1,4 +1,4 @@
-Django==1.7.4
+Django==1.11.29
 django-allauth==0.19.1
 django-crispy-forms==1.4.0
 oauthlib==0.7.2
